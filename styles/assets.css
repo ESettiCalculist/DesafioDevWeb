@@ -1,0 +1,31 @@
+@import url("../assets/icone-biblioteca.svg");
+@import url("../assets/icone-busca.svg");
+@import url("../assets/icone-biblioteca.svg");
+@import url("../assets/icone-add_box.svg");
+@import url("../assets/icone-stars.svg");
+
+.icon_home {
+    background: url("../assets/icone-home.svg") no-repeat;
+    background-position: 3em;
+}
+
+.icon_busca {
+    background: url("../assets/icone-busca.svg") no-repeat;
+    background-position: 3em;
+}
+
+.icon_biblioteca {
+    background: url("../assets/icone-biblioteca.svg") no-repeat;
+    background-position: 3em;
+}
+
+.icon_playlist {
+    background: url("../assets/icone-add_box.svg") no-repeat;
+    background-position: 1em;
+}
+
+.icon_favoritas {
+    background: url("../assets/icone-stars.svg") no-repeat;
+    background-position: 1em;
+}
+
