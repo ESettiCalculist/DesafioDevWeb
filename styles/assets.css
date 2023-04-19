@@ -29,3 +29,30 @@
     background-position: 1em;
 }
 
+@media (max-width: 1440px) {
+    .icon_home {
+        background-position: .6em;
+    }
+
+    .icon_busca {
+        background-position: .6em;
+    }
+
+    .icon_biblioteca {
+        background-position: .6em;
+    }
+
+    .icon_playlist {
+        background-size: 1em;
+        background-position: .6em;
+    }
+
+    .icon_favoritas {
+        background-size: 1.2em;
+        background-position: .6em;
+    }
+}
+
+@media (max-width: 840px) {
+    
+}

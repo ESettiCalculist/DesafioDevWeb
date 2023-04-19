@@ -1,139 +1,210 @@
 @import url("./assets.css");
 
 :root {
-    --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --roxo-botao:#5b0981;
-    --branco: #fff;
-    --azul-escuro: #041833;
-    --azul-claro:steelblue;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --roxo-botao: #5b0981;
+  --branco: #fff;
+  --azul-escuro: #041833;
+  --azul-claro: steelblue;
+  --roxo-degrade:linear-gradient(97.54deg, #5b0981 35.49%, #e955d0 165.37%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background:var(--azul-degrade);
+  background: var(--azul-degrade);
 }
 
 a {
-    text-decoration: none;
-    color: var(--branco);
+  text-decoration: none;
+  color: var(--branco);
 }
-
 
 /* cores, tamanho do texto, posições dos itens do menu */
 .ativo {
-    background-color:var(--azul-claro);
-    border-radius: 5px;
-    padding: .75rem 0.3rem;
-    width: 85%;
-    text-align: center;
-    margin: 1em;
-    list-style: none;
+  background-color: var(--azul-claro);
+  border-radius: 5px;
+  padding: 0.75rem 0.3rem;
+  width: 85%;
+  text-align: center;
+  margin: 1em;
+  list-style: none;
 }
 
 .ativo:hover {
-    background-color:var(--roxo-botao);
+  background-color: var(--roxo-botao);
 }
 .menu_lateral {
-    background-color: var(--azul-escuro);
-    padding: 1rem 1rem;
-    font-weight: 600;
-    letter-spacing: .2px;
-    width: 18em;
-    border-radius: 16px;
-    position: fixed;
-    margin: 1em;
+  background-color: var(--azul-escuro);
+  padding: 1rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  width: 18em;
+  border-radius: 16px;
+  position: fixed;
+  margin: 1em;
 }
 
 .menu_lateral_playlist {
-    color: var(--branco);
-    font-size: 26px;
-    padding-left: 3.3em;
-    padding-top: 1em;
+  color: var(--branco);
+  font-size: 26px;
+  padding-left: 3.3em;
+  padding-top: 1em;
 }
 
 .container {
-    padding-left: 22em;
+  padding-left: 22em;
 }
 
 .container_playlist {
-    padding: 4em;
-    border: 2px solid var(--azul-claro);
-    width: 90%;
-    background-color: black;
-    border-radius: 50px;
-    margin-bottom: 1rem;
+  padding: 4em;
+  border: 2px solid var(--azul-claro);
+  width: 90%;
+  background-color: black;
+  border-radius: 50px;
+  margin-bottom: 1rem;
 }
 
 .titulo_playlist {
-    text-align: center;
-    padding-bottom: 2em;
-    color: var(--branco);
+  text-align: center;
+  padding-bottom: 2em;
+  color: var(--branco);
 }
 
 .cards_list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards_duo {
-    display: flex;
-    
+  display: flex;
 }
 
 .container_player {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid var(--azul-claro);
-    background: var(--roxo-botao);
-    border-radius: 8px;
-    width:32rem;
-    padding: 1em;
-    margin: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--azul-claro);
+  background: var(--roxo-degrade);
+  border-radius: 8px;
+  width: 32rem;
+  padding: 1em;
+  margin: 1em;
 }
 
 .container_player:hover {
-    background: var(--azul-claro);
+  background: var(--azul-claro);
 }
 
 .container_itens {
-    display: flex;
+  display: flex;
 }
 
 .cartao_imagem {
-    width: 100px;
-    height: 100px;
+  max-width: 100%;
+  height: auto;
 }
 
 .player_musicname {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .player_song {
-    padding-top: 2em;
-    padding-left: 1em;
-    width: 400px;
+  padding-top: 2em;
+  padding-left: 1em;
+  width: 25rem;
 }
 
 .album {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .title_music {
-    font-size: 1.3rem;
-    color: var(--branco);
+  font-size: 1.3rem;
+  color: var(--branco);
 }
 
 .card_center {
-    text-align: center;
+  text-align: center;
 }
 
 /* https://coldmp3.com/top/rnb/ site para utilizar links de som mp3, usar clicar com obotao direito em cima do botão de download, selecionar copiar link e colar o link na ta src dentro do sorce da tag audio control */
+
+@media (max-width: 1440px) {
+  .menu_lateral {
+    width: 15em;
+    font-size: 14px;
+  }
+
+  .ativo {
+    width: 80%;
+  }
+
+  .menu_lateral_playlist {
+    padding-left: 2em;
+  }
+
+  .container_playlist {
+    width: 80%;
+  }
+
+  .container {
+    padding-left: 18em;
+  }
+
+  .cartao_imagem {
+    width: 5.2em;
+    height: auto;
+  }
+
+  .container_player {
+    width: 28vw;
+    height: 6em;
+  }
+
+  .player_song {
+    width: 18vw;
+  }
+
+  .title_music {
+    margin-top: .5em;
+    font-size: .95rem;
+  }
+}
+
+@media (max-width: 840px) {
+    .container_player {
+        width: 22vw;
+        height: 4em;
+    }
+
+    audio::-webkit-media-controls-panel {
+        display: none;
+      }
+
+    /* .player_song {
+        display: none;
+    } */
+
+    .cartao_imagem {
+        width: 3.4em;
+        height: auto;
+    }
+
+    .album {
+        font-size: .5rem;
+        font-weight: 600;
+    }
+
+    .title_music {
+        font-size: .5em;
+        font-weight: 600;
+    }
+}
