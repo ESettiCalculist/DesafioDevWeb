@@ -112,12 +112,8 @@ a {
 }
 
 .cards_duo {
-<<<<<<< HEAD
-  display: flex;
-=======
     display: flex;
 
->>>>>>> development
 }
 
 .container_player {
@@ -146,15 +142,9 @@ a {
 }
 
 .player_musicname {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-=======
     display: flex;
     flex-direction: column;
     gap: 15px;
->>>>>>> development
 }
 
 .player_song {
