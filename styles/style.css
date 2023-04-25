@@ -17,6 +17,36 @@
 body {
   background: var(--azul-degrade);
 }
+h1 {
+    color: var(--branco);
+    text-align: center;
+    padding: 2em;
+}
+/* .topnav {
+    border: var(--azul-claro) 2px solid;
+    background-color: var(--azul-escuro);
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: var(--roxo-botao);
+    color: #ffffff;
+}
+
+.topnav a.active {
+    background-color: var(--azul-claro);
+    color: #ffffff;
+} DEFINNIR SE IRA USAR MENU SUPERIOR */
 
 a {
   text-decoration: none;
@@ -82,7 +112,12 @@ a {
 }
 
 .cards_duo {
+<<<<<<< HEAD
   display: flex;
+=======
+    display: flex;
+
+>>>>>>> development
 }
 
 .container_player {
@@ -111,9 +146,15 @@ a {
 }
 
 .player_musicname {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 15px;
+=======
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+>>>>>>> development
 }
 
 .player_song {
