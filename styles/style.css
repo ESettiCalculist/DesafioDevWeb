@@ -1,12 +1,12 @@
 @import url("./assets.css");
 
 :root {
-  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-  --roxo-botao: #5b0981;
+  --degrade: linear-gradient(97.54deg, #111625 35.49%, #9d2053 165.37%);
+  --roxo-botao: #341931;
   --branco: #fff;
-  --azul-escuro: #041833;
-  --azul-claro: steelblue;
-  --roxo-degrade: linear-gradient(97.54deg, #5b0981 35.49%, #e955d0 165.37%);
+  --escuro: #330704;
+  --claro: #571b3c;
+  --roxo-degrade: linear-gradient(97.54deg, #341931 35.49%, #9d2053 165.37%);
 }
 
 * {
@@ -15,16 +15,26 @@
 }
 
 body {
-  background: var(--azul-degrade);
+  background: var(--degrade);
+  font-family: 'Nanum Gothic Coding', monospace;
 }
-h1 {
-  color: var(--branco);
+.capa-imagem{
+  height: 55vh;
+  width: 60vw ;
+  margin: 1em auto 2em;
+  background-image: url("../assets/header2.jpg");
+  background-position: center;
+  background-size:cover;
+  position: relative;
+}
+footer {
+  color: #fff;
   text-align: center;
-  padding: 2em;
+  margin: 2em;
 }
 .topnav {
-  border: var(--azul-claro) 2px solid;
-  background-color: var(--azul-escuro);
+  border: var(--claro) 2px solid;
+  background-color: var(--escuro);
   overflow: hidden;
   margin-bottom: 2em;
   display: none;
@@ -45,7 +55,7 @@ h1 {
 }
 
 .topnav a.active {
-  background-color: var(--azul-claro);
+  background-color: var(--claro);
   color: #ffffff;
 }
 a {
@@ -55,7 +65,7 @@ a {
 
 /* cores, tamanho do texto, posições dos itens do menu */
 .ativo {
-  background-color: var(--azul-claro);
+  background-color: var(--claro);
   border-radius: 5px;
   padding: 0.75rem 0.3rem;
   width: 85%;
@@ -68,7 +78,7 @@ a {
   background-color: var(--roxo-botao);
 }
 .menu_lateral {
-  background-color: var(--azul-escuro);
+  background-color: var(--escuro);
   padding: 1rem 1rem;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -87,15 +97,16 @@ a {
 
 .container {
   padding-left: 22em;
-  padding-right: .6em;
+  padding-right: 1em;
+  margin: 2em;
 }
 
 .container_playlist {
   padding: 4em;
-  border: 2px solid var(--azul-claro);
+  border: 2px solid var(--claro);
   width: 90%;
   background-color: black;
-  border-radius: 50px;
+  border-radius: 25px;
   margin-bottom: 1rem;
 }
 
@@ -120,16 +131,17 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 2px solid var(--azul-claro);
+  border: 2px solid var(--claro);
   background: var(--roxo-degrade);
   border-radius: 8px;
   width: 32rem;
   padding: 1em;
   margin: 1em;
+  color: #fff;
 }
 
 .container_player:hover {
-  background: var(--azul-claro);
+  background: var(--claro);
 }
 
 .container_itens {
