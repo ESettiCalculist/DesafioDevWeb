@@ -22,9 +22,10 @@ body {
   height: 55vh;
   width: 60vw ;
   margin: 1em auto 2em;
-  background-image: url("/assets/header2.jpg");
+  background-image: url("../assets/header2.jpg");
   background-position: center;
   background-size:cover;
+  position: relative;
 }
 footer {
   color: #fff;
