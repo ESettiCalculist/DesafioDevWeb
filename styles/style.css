@@ -19,8 +19,8 @@ body {
   font-family: 'Nanum Gothic Coding', monospace;
 }
 .capa-imagem{
-  height: 55vh;
-  width: 60vw ;
+  height: 38vh;
+  width: 50vw ;
   margin: 1em auto 2em;
   background-image: url("../assets/header2.jpg");
   background-position: center;
