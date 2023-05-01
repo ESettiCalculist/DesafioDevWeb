@@ -6,7 +6,7 @@
   --branco: #fff;
   --azul-escuro: #041833;
   --azul-claro: steelblue;
-  --roxo-degrade:linear-gradient(97.54deg, #5b0981 35.49%, #e955d0 165.37%);
+  --roxo-degrade: linear-gradient(97.54deg, #5b0981 35.49%, #e955d0 165.37%);
 }
 
 * {
@@ -18,36 +18,36 @@ body {
   background: var(--azul-degrade);
 }
 h1 {
-    color: var(--branco);
-    text-align: center;
-    padding: 2em;
+  color: var(--branco);
+  text-align: center;
+  padding: 2em;
 }
-/* .topnav {
-    border: var(--azul-claro) 2px solid;
-    background-color: var(--azul-escuro);
-    overflow: hidden;
-    margin-bottom: 2em;
+.topnav {
+  border: var(--azul-claro) 2px solid;
+  background-color: var(--azul-escuro);
+  overflow: hidden;
+  margin-bottom: 2em;
+  display: none;
 }
 
 .topnav a {
-    float: left;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: var(--roxo-botao);
-    color: #ffffff;
+  background-color: var(--roxo-botao);
+  color: #ffffff;
 }
 
 .topnav a.active {
-    background-color: var(--azul-claro);
-    color: #ffffff;
-} DEFINNIR SE IRA USAR MENU SUPERIOR */
-
+  background-color: var(--azul-claro);
+  color: #ffffff;
+}
 a {
   text-decoration: none;
   color: var(--branco);
@@ -87,6 +87,7 @@ a {
 
 .container {
   padding-left: 22em;
+  padding-right: .6em;
 }
 
 .container_playlist {
@@ -112,8 +113,7 @@ a {
 }
 
 .cards_duo {
-    display: flex;
-
+  display: flex;
 }
 
 .container_player {
@@ -142,9 +142,9 @@ a {
 }
 
 .player_musicname {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .player_song {
@@ -188,6 +188,7 @@ a {
 
   .container {
     padding-left: 18em;
+    padding-right: .5em;
   }
 
   .cartao_imagem {
@@ -205,37 +206,44 @@ a {
   }
 
   .title_music {
-    margin-top: .5em;
-    font-size: .95rem;
+    margin-top: 0.5em;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 840px) {
-    .container_player {
-        width: 22vw;
-        height: 4em;
-    }
+  .topnav {
+    display: block;
+  }
 
-    audio::-webkit-media-controls-panel {
-        display: none;
-      }
+  .container {
+    padding: 1em 3em;
+  }
 
-    /* .player_song {
-        display: none;
-    } */
+  .menu_lateral {
+    display: none;
+  }
+  .container_player {
+    width: 22vw;
+    height: 4em;
+  }
 
-    .cartao_imagem {
-        width: 3.4em;
-        height: auto;
-    }
+  audio::-webkit-media-controls-panel {
+    display: none;
+  }
 
-    .album {
-        font-size: .5rem;
-        font-weight: 600;
-    }
+  .cartao_imagem {
+    width: 3.4em;
+    height: auto;
+  }
 
-    .title_music {
-        font-size: .5em;
-        font-weight: 600;
-    }
+  .album {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  .title_music {
+    font-size: 0.5em;
+    font-weight: 600;
+  }
 }
