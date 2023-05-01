@@ -16,11 +16,15 @@
 
 body {
   background: var(--degrade);
+  font-family: 'Nanum Gothic Coding', monospace;
 }
-h1 {
-  color: var(--branco);
-  text-align: center;
-  padding: 2em;
+.capa-imagem{
+  height: 55vh;
+  width: 60vw ;
+  margin: 1em auto 2em;
+  background-image: url("/assets/header2.jpg");
+  background-position: center;
+  background-size:cover;
 }
 footer {
   color: #fff;
